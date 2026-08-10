@@ -62,7 +62,7 @@ CREATE INDEX IF NOT EXISTS IDX_PLANASSUMPTION_KIND ON PLANASSUMPTION_V1(KIND);
 
 -- Describe PLANITEM_V1
 -- A single planned income or expense. When UNITS is set the amount is derived
--- as UNITS * UNITPRICE, with TAXRATE giving the net (after-tax) value; this
+-- as UNITS * UNITPRICE, with TAXRATE giving the net (after-tax) value, which
 -- models share/RSU vesting.
 CREATE TABLE IF NOT EXISTS PLANITEM_V1(
 PLANITEMID integer primary key

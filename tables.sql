@@ -97,7 +97,7 @@ BUDGETENTRYID integer primary key
 , SEGMENTID integer
 , AMOUNTTYPE TEXT /* Fixed, Estimated, Auto */
 , AUTOSOURCE TEXT
-, ROLLOVER TEXT /* None, Surplus, Deficit, Both */
+, ROLLOVER TEXT /* None, Surplus */
 );
 CREATE INDEX IDX_BUDGETTABLE_BUDGETYEARID ON BUDGETTABLE_V1(BUDGETYEARID);
 
